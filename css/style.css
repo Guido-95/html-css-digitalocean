@@ -1,0 +1,65 @@
+/* reset option */
+* {
+    box-sizing: border-box ;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: aqua;
+}
+.yellow{
+    background-color: yellow;
+    border: 1px solid black;
+}
+/* bar_top_fixed */
+.ms_navbar {
+    height: 80px;
+    line-height: 80px;
+    background-color: white;
+}
+
+.navbar li {
+    
+    border: 1px solid white;
+}
+
+.navbar li a {
+    color: white;
+    
+}
+
+#logo {
+    
+    vertical-align: middle;
+    width: 150px;
+
+}
+
+.ms_button { 
+    float: none;
+    vertical-align: middle;
+}
+
+ul{
+  
+}
+.ms_collapse {
+    background-color: rgba(50, 50, 255, 0.5);
+}
+.ms_icon {
+    background-color:#3a8aff;
+}
+
+@media (min-width: 768px) and (max-width:1200px){
+    .ms_button {
+        display: inline-block;
+    }
+
+    .collapse.ms_container_list_none {
+    display: none !important;
+    }
+
+    .show.ms_container_list_none {
+        display: block!important;
+}
