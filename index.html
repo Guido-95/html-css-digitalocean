@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;600;700&display=swap" rel="stylesheet">
 
     <!-- font-awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
@@ -17,13 +20,92 @@
     <title> Esercitazione DIGITALOCEAN </title>
  </head>
  <body>
-    <!-- header -->
-    <header>
-      
-        <!-- nav -->
-        <nav class="navbar ms_navbar">
+    <div class="container-fluid" id="container-nav-fixed">
+        <!-- nav fixed top lg -->
+        <nav class="container hidden-xs hidden-sm hidden-md nav_fixed">
+            <!-- row -->
+            <div class="row">
+                <!-- logo left -->
+                <div class="col-lg-3 ">
+                    <a href="#">
+                        <img src="img/logo.png" alt="Logo" id="logo">
+                    </a>
+                </div>
+                <!-- /logo left -->
+
+                <!-- link middle -->
+                <div class="col-lg-5 ">
+                    <!-- unoderdered list -->
+                    <ul class="">
+                    
+                        <li class="list_style">
+                            <a href="#">
+                                Products <i class="fas fa-chevron-down"></i>
+                            </a>
+                        </li>
+
+                        <li class="list_style">
+                            <a href="#">
+                                Customers
+                            </a>
+                        </li>
+
+                        <li class="list_style">
+                            <a href="#">
+                                Community <i class="fas fa-chevron-down"></i>
+                            </a>
+                        </li>
+
+                        <li class="list_style">
+                            <a href="#">
+                            Pricing
+                            </a>
+                        </li>
+
+                    </ul>
+                    <!-- unoderdered list -->
+                </div>
+                <!-- /link middle -->
+
+                <!-- link right -->
+                <div class="col-lg-4 text-right">
+                    <ul>     
+                        <li class="list_style">
+                            <a href="#">
+                                Docs
+                            </a>
+                        </li>
+                        <li class="list_style">
+                            <a href="#">
+                                Support 
+                                <i class="fas fa-chevron-down">
+                                </i>
+                            </a>
+                        </li>
+                        <li class="list_style">
+                            <a href="#">
+                                Login
+                            </a>
+                        </li>
+                        <li class="list_style">
+                            <a href="#" class="btn btn-primary">
+                            
+                                Sign Up
+                            </a>
+                        </li>                          
+                    </ul>
+                </div>
+                <!-- link right -->
+            </div>
+            <!-- row -->
+        </nav>
+        <!-- nav fixed top lg -->
+
+        <!-- nav fixed-top only xs-sm-md -->
+        <nav class="navbar hidden-lg nav_fixed">
             
             <div class="container">
+                <!-- row -->
                 <div class="row">
                     <div class="col-xs-6 ">
                         <!-- Brand and toggle get grouped for better mobile display -->
@@ -33,64 +115,160 @@
                             </a>
                         </div>    
                     </div>
-    
-                    <div class="col-xs-6 text-right ">
+                    
+                    <div class="col-xs-6 text-right">
+                        <!-- button -->
                         <button type="button" class="navbar-toggle collapsed ms_button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                            <span class="sr-only">Toggle navigation</span>
-                            <span class="icon-bar ms_icon"></span>
-                            <span class="icon-bar ms_icon"></span>
-                            <span class="icon-bar ms_icon"></span>
+                            <span class="sr-only">
+                                Toggle navigation
+                            </span>
+                            <span class="icon-bar ms_icon_3_span"></span>
+                            <span class="icon-bar ms_icon_3_span"></span>
+                            <span class="icon-bar ms_icon_3_span"></span>
                         </button>
+                        <!-- button -->
                     </div>
-                    <div class="col-xs-12  hidden-lg ms_collapse">
+                    <div class="col-xs-12  hidden-lg ms_container_list_hidden">
                         <!-- Collect the nav links, forms, and other content for toggling -->
                         <div class="collapse navbar-collapse ms_container_list_none " id="bs-example-navbar-collapse-1">
                             <ul class="nav navbar-nav navbar-right">
-                                <li>
+                                <li class="list_style">
                                     <a href="#">
                                         Products <i class="fas fa-chevron-down"></i>
                                     </a>
                                 </li>
-                                <li class="active">
+                                <li class="list_style">
                                     <a href="#">
                                         Customers
                                     </a>
                                 </li>
-                                <li>
+                                <li class="list_style">
                                     <a href="#">
                                         Community <i class="fas fa-chevron-down"></i>
                                     </a>
                                 </li>
-                                <li>
+                                <li class="list_style">
                                     <a href="#">
                                     Pricing
                                     </a>
                                 </li>
-                                <li><a href="#">Docs</a></li>
-                                <li class="active"><a href="#">Support <i class="fas fa-chevron-down"></i></a></li>
-                                <li><a href="#">Login</a></li>
-                                <li><a href="#">Sign Up bottone</a></li>              
+                                <li class="list_style">
+                                    <a href="#">
+                                        Docs
+                                    </a>
+                                </li>
+                                <li class="list_style">
+                                    <a href="#">
+                                        Support 
+                                        <i class="fas fa-chevron-down">
+                                        </i>
+                                    </a>
+                                </li>
+                                <li class="list_style">
+                                    <a href="#">
+                                        Login
+                                    </a>
+                                </li>
+                                <li class="list_style">
+                                    <a href="#">
+                                        Sign Up bottone
+                                    </a>
+                                </li>                          
                             </ul>
                         </div>
                     </div>
                 </div>
-            </div>      
+                <!-- row -->
+            </div>    
         </nav>
-        <!-- /nav -->
+        <!-- nav fixed-top only xs-sm-md -->
+    </div>
+    <!-- header -->
+    <header>
+        <div id="ms_jumbotron">
+            <div class="container container_xs container_sm_md">
+                <div class="row">             
+                    <div class="col-xs-12 col-sm-8 col-lg-7 ">
+                        <h1>
+                            The simplest cloud platform for developers 	&amp; teams
+                        </h1>
+                        <p class="paragraph">
+                            Deploy, manage, and scale cloud applications faster and more afficiently on DigitalOcean. We make managing infrastructure easy for teams and businesses, whether you're running one virtual machine or ten thousand.
+                        </p>
+                    </div>
+
+                    <div class="col-xs-12 col-sm-4 col-lg-5" id="jumbotron_right" >
+                        <div class="text-center">
+                            <h2 class="h2_jumbotron margin_top">
+                                deploy your app in seconds.
+                            </h2>
+                            <h2 class="blue h2_jumbotron">
+                                Get started now.
+                            </h2>
+                            <form action="">
+                                <input type="email" placeholder="Email">
+                                <input type="password" placeholder="Password">
+                                <button type="button" class="btn btn-primary button_jumbotron">
+                                    Create you account
+                                </button>
+                                <button type="button" class="btn btn-light button_jumbotron" id="button_google">
+                                    <img src="img/google-icon.png" alt="Google" id="google_icon"> 
+                                    Sign up with google
+                                </button>
+                            </form>
+
+                            <p class="font_mini">
+                                By signing up you agree to the <span class="text_decoration"> Terms of service.</span>
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+       
+        
         
     </header>
     <!-- header -->
     <!-- main -->
     <main>
+
+        <!-- section businesses -->
+            <section id="section_businesses" class="text-center">
+
+                <h4 class="text-uppercase" id="h4_section_businesses">
+                    innovative businesses trust digitalocean
+                </h4>
+                <div id="images_businesses"> 
+                    <img src="img/docker.svg" alt="Dcoker">
+                    <img src="img/gitlab.svg" alt="gitlab">
+                    <img src="img/slack.svg" alt="slack">
+                    <img src="img/hashicorp.svg" alt="hashicorp">
+                    <img src="img/hashicorp.svg" alt="hashicorp">
+                    <img src="img/splunk.svg" alt="splunk">
+                </div>
+
+               <div class="text_blue">
+                   View customer stories &gt;
+               </div>
+               
+           
+        </section>
+        <!-- section businesses -->
+
+
         <!-- section deploy -->
         <section>
-            
+           
         </section>
         <!-- section deploy -->
 
         <!-- /section designed -->
         <section>
-
+            
         </section>
         <!-- /section designed -->
 
