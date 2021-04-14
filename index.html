@@ -17,7 +17,7 @@
     <!-- style css -->
     <link rel="stylesheet" href="css/style.css">
 
-    <title> Esercitazione DIGITALOCEAN </title>
+    <title> Esercitazione DigitalOcean </title>
  </head>
  <body>
     <div class="container-fluid" id="container-nav-fixed">
@@ -34,14 +34,27 @@
                 <!-- /logo left -->
 
                 <!-- link middle -->
-                <div class="col-lg-5 ">
+                <div class="col-lg-5">
                     <!-- unoderdered list -->
                     <ul class="">
                     
                         <li class="list_style">
-                            <a href="#">
-                                Products <i class="fas fa-chevron-down"></i>
-                            </a>
+                            <li class="dropdown list_style display_inline_block">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Products <i class="fas fa-chevron-down"></i>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a href="" >
+                                            Lorem.
+                                        </a>
+                                       
+                                    </li>
+                                    <li>
+                                        <a href="" >
+                                            Lorem.
+                                        </a>
+                                        
+                                    </li>
+                                </ul>
                         </li>
 
                         <li class="list_style">
@@ -51,9 +64,22 @@
                         </li>
 
                         <li class="list_style">
-                            <a href="#">
-                                Community <i class="fas fa-chevron-down"></i>
-                            </a>
+                            <li class="dropdown list_style display_inline_block">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Community <i class="fas fa-chevron-down"></i>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a href="" >
+                                            Lorem.
+                                        </a>
+                                       
+                                    </li>
+                                    <li>
+                                        <a href="" >
+                                            Lorem.
+                                        </a>
+                                        
+                                    </li>
+                                </ul>
                         </li>
 
                         <li class="list_style">
@@ -76,11 +102,23 @@
                             </a>
                         </li>
                         <li class="list_style">
-                            <a href="#">
-                                Support 
-                                <i class="fas fa-chevron-down">
-                                </i>
-                            </a>
+                            <li class="dropdown list_style display_inline_block">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Support <i class="fas fa-chevron-down"></i>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a href="" >
+                                            Lorem.
+                                        </a>
+                                       
+                                    </li>
+                                    <li>
+                                        <a href="" >
+                                            Lorem.
+                                        </a>
+                                        
+                                    </li>
+                                </ul>
+                            </li>
                         </li>
                         <li class="list_style">
                             <a href="#">
@@ -88,7 +126,7 @@
                             </a>
                         </li>
                         <li class="list_style">
-                            <a href="#" class="btn btn-primary">
+                            <a href="#" class="btn btn-primary button_nav">
                             
                                 Sign Up
                             </a>
@@ -188,7 +226,7 @@
         <div id="ms_jumbotron">
             <div class="container container_xs container_sm_md">
                 <div class="row">             
-                    <div class="col-xs-12 col-sm-8 col-lg-7 ">
+                    <div class="col-xs-12 col-sm-7 col-lg-7 ">
                         <h1>
                             The simplest cloud platform for developers 	&amp; teams
                         </h1>
@@ -197,7 +235,7 @@
                         </p>
                     </div>
 
-                    <div class="col-xs-12 col-sm-4 col-lg-5" id="jumbotron_right" >
+                    <div class="col-xs-12 col-sm-5 col-lg-5" id="jumbotron_right" >
                         <div class="text-center">
                             <h2 class="h2_jumbotron margin_top">
                                 deploy your app in seconds.
@@ -242,13 +280,14 @@
                 <h4 class="text-uppercase" id="h4_section_businesses">
                     innovative businesses trust digitalocean
                 </h4> 
+                
                 <div id="images_businesses"> 
-                    <img src="img/docker.svg" alt="Dcoker">
-                    <img src="img/gitlab.svg" alt="gitlab">
-                    <img src="img/slack.svg" alt="slack">
-                    <img src="img/hashicorp.svg" alt="hashicorp">
-                    <img src="img/hashicorp.svg" alt="hashicorp">
-                    <img src="img/splunk.svg" alt="splunk">
+                    <img src="img/docker.svg" alt="Dcoker" >
+                    <img src="img/gitlab.svg" alt="gitlab" >
+                    <img src="img/slack.svg" alt="slack" >
+                    <img src="img/hashicorp.svg" alt="hashicorp" >
+                    <img src="img/hashicorp.svg" alt="hashicorp" >
+                    <img src="img/splunk.svg" alt="splunk" >
                 </div>
 
                <div class="text_blue">
@@ -261,8 +300,8 @@
 
 
         <!-- section deploy -->
-        <section id="section_deploy" >
-            <div class="container">
+        <section id="section_deploy">
+            <div class="container container_xs">
                 <h2 class=" text-center">
                     Deploy and scale seamlessly
                 </h2> 
@@ -270,7 +309,7 @@
                     Our optimized configuration process save your team time when running and scaling distributed application, Al &amp; machine learning workloads, hosted services, client websites, or CI/CD environments.
                 </p>
                 <!-- container -->
-                <div class="container width_80">
+                <div class="container width_80_lg_100_xs_md">
                     <!-- row -->
                     <div class="row">
                         <!-- column list -->
@@ -327,7 +366,7 @@
                                     <h4>
                                         Global availability
                                     </h4>
-                                    <p class="paragraph_2">Deploy to ani of our data center regions around the wordld.</p>
+                                    <p class="paragraph_2">Deploy to ani of our data center regions around the world.</p>
 
                                 </div>
                             </div>
@@ -365,25 +404,29 @@
                     </div>
                   
                 </div>
-               
+                <p class="paragraph_2">
+                    Create computer server in 55 second or less.
+    
+                </p>
             </div>
-            <p class="paragraph_2">
-                Create computer server in 55 second or less.
-
-            </p>
-
-            <i class="fas fa-circle cirlce_color"></i>
-            <i class="far fa-circle cirlce_color"></i>
-            <i class="far fa-circle cirlce_color"></i>
-            <i class="far fa-circle cirlce_color"></i>
+            
+            <div class="circles">
+                <i class="fas fa-circle cirlce_color"></i>
+                <i class="far fa-circle cirlce_color"></i>
+                <i class="far fa-circle cirlce_color"></i>
+                <i class="far fa-circle cirlce_color"></i>
+            </div>
+            
             
         </section>
         <!-- /section designed -->
 
         <!-- section features -->
         <section id="section_features" class="text-center">
+
+            
             <h2>
-                The features you businesses needs
+                The features your businesses needs
             </h2> 
 
             <div class="container">
@@ -439,11 +482,11 @@
             <!-- container -->
             <div class="container">
                 <!-- row -->
-                <div class="row ">
+                <div class="row margin_left_0">
                     <!-- block left -->
                     <div class="col-xs-12 col-lg-6 ">
                         <!-- row block left -->
-                        <div class="row">
+                        <div class="row margin_left_0">
                             <!-- row 1 left -->
                             <div class="col-xs-11">
                                 <div class="row padding_section_5 border_bottom">
@@ -571,7 +614,7 @@
 
                     <!-- block right -->
                     <div class="col-xs-12 col-lg-6 ">
-                        <div class="row ">
+                        <div class="row margin_left_0">
                             <!-- row 1 right -->
                             <div class="col-xs-11 ">
                                 <div class="row padding_section_5 border_bottom">
@@ -747,7 +790,7 @@
                Get started now.
            </h2>
            <button class="btn">
-               Create you account
+               Create your account
            </button>
         </section>
         <!-- /section started -->
