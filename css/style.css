@@ -17,11 +17,29 @@ body {
     border: 2px solid black;
 }
 
-.green {
-    height: 200px;
-    background-color: rgba(50, 255, 50, 0.2);
+.aqua{
+    
+    height: 45px;
+    background-color: aqua;
     border: 1px solid black;
+    opacity: 0.5;
+}
+
+.green {
+    height: 50px;
+    background-color: rgba(50, 255, 50, 0.2);
+    border: 1px solid lightgreen;
    
+}
+
+.prova{
+    
+}
+
+
+
+.white{
+    color: white;
 }
 
 .width_80 {
@@ -119,7 +137,8 @@ input{
 /* bar_top_fixed */
 #container-nav-fixed {
     /* position: fixed;
-    width: 100%; */
+    top: 0;
+    z-index: 1000; */
     background-color: white;
 }
 
@@ -264,7 +283,7 @@ input{
 
 #section_designed img {
    
-    width: 30%;
+    width: 50%;
 }
 
 
@@ -290,9 +309,184 @@ input{
     color:#031c4e ;
 }
 
+/* section 4/7 */
+
+#section_features {
+    padding-top: 50px;
+    padding-bottom: 60px;
+    background-color: white;
+}
+
+#section_features > h2{
+    margin-bottom: 50px;
+}
+
+#section_features .paragraph_2{
+    font-size: 15px;
+    font-weight: 500;
+    color: #606e8b;
+}
+
+#section_features img{
+    margin-bottom: 20px;
+}
+
+
+/* section 5/7 */
+#section_service{
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-image: linear-gradient(#0044c3, #001e9a);
+    
+}
+.color_city {
+    color:#a0b4e1;
+}
+.text_green{
+    color: #00cbcf;
+}
+
+.margin{
+    margin: 1px;
+}
+
+.padding_section_5{
+    padding: 10px;
+}
+
+.border_bottom{
+    border-bottom: 1px solid white;
+}
+
+#section_service .col-lg-2 {
+    text-transform: uppercase;
+    text-align: left;
+}
+
+
+
+#section_service .border_bottom > .row {
+    padding: 10px;
+}
+
+#section_service .text_blue{
+    display: block;
+   
+    text-align: right;
+}
+
+/* section 6/7 */
+
+#section_development{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background: #f3f5f9;
+}
+.background_white{
+    position: relative;
+    margin-top: 50px;
+    padding-top: 50px;
+    padding-bottom: 70px;
+    background: white;
+}
+
+#section_development img{
+    width: 60%;
+}
+
+#section_development .paragraph{
+    margin-top: 10px;
+    font-size: 19px;
+    color: #5c6a88;
+
+}
+.color_section_6{
+    font-size: 16px;
+    font-weight: 700;
+    color: #031c4e;
+}
+.font_weight-500{
+    font-size: 16px;
+    font-weight: 500;
+    color: #031c4e;
+}
+
+#section_development .text_blue {
+   margin-top: 40px;
+}
+
+#section_development .chavron_left {
+    position: absolute;
+    top: 50%;
+    left: -11%;
+    transform: translateY(-50%);
+}
+   
+
+#section_development .chavron_right{
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    transform: translateY(-50%);
+    
+}
+
+.circles{
+    margin-top: 40px;
+}
+
+/* section 7/7 */
+
+#section_started{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-image: linear-gradient(#0044c3, #001e9a);
+}
 
 /* footer */
 
+#footer{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: #031c4e;
+}
+
+#footer .paragraph{
+    font-size: 15px;
+}
+
+#footer .footer_text_left{
+    font-size: 15px;
+    color: #7a859d;
+}
+
+.ms_social li{
+    font-size: 25px;
+    padding: 5px;
+    list-style: none;
+    display: inline-block;
+}
+
+.ms_social a{
+    color: #7a859d;
+}
+
+footer li {
+    
+    padding: 5px;
+    list-style: none; 
+}
+
+footer li a{
+    text-decoration: none;
+    color: #9fa6b8;
+}
+
+.strong_li a{
+    font-weight: 500;
+    font-size: 18px;
+    color: white;
+}
 
 
 
@@ -313,8 +507,23 @@ input{
 
 
 
+@media screen and (max-width: 500px){
+    .container_xs{
+        width: 98%;
+    }
+     /* section 3/7 */
+    #section_designed img {
+   
+        width: 70%;
+    }
 
-
+    .chavron_left,
+    .chavron_right{
+        padding: 10px;
+        font-size: 25px;
+    }
+    
+}
 
 
 
@@ -331,20 +540,51 @@ input{
     .show.ms_container_list_none {
         display: block!important;
     }
+
+
+    #section_development .container{
+        width: 50%;
+    }
+
 }
 /* container_sm_md */
 
 /* container_xs */
 @media screen and (max-width: 768px){
+    h1 {
+        font-size: 40px;
+        font-weight: 600;
+        
+    }
     .container_xs{
         width: 98%;
     }
+     /* section 3/7 */
+    #section_designed img {
+   
+        width: 60%;
+    }
+
+    #section_development .container{
+        width: 50%;
+    }
+
+    #section_development i{
+        display: none;
+    }
+    
 }
 
 @media screen and (min-width: 769px) and (max-width: 992px){
     .container_sm_md{
         width: 95%;
     }
+    /* section 3/7 */
+    #section_designed img {
+   
+        width: 45%;
+    }
+    
 }
 
 
