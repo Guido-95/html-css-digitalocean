@@ -31,10 +31,16 @@ body {
 }
 
 .green {
-    height: 50px;
+    
     background-color: rgba(50, 255, 50, 0.2);
     border: 1px solid lightgreen;
    
+}
+
+.fix_margin_padding{
+    margin: 0;
+    padding: 0;
+    
 }
 
 .white{
@@ -150,11 +156,17 @@ nav .list_style > a:hover {
 .btn-primary.button_nav:hover {
     color: #fff;
     background-color: #006aff;
-    border-color: #204d74;
+    
+}
+
+nav>li>a:focus, 
+.nav>li>a:hover {
+    text-decoration: none;
+    background-color: transparent;
 }
 
 .nav_fixed {
-    border-bottom: 2px solid rgb(0, 105, 255);
+    border-bottom: 1px solid rgb(0, 105, 255);
     height: 80px;
     line-height: 80px;
     background-color: white;
@@ -164,7 +176,14 @@ nav .list_style > a:hover {
 .ms_container_list_none{
    
     
-    border-bottom: 2px solid rgb(0, 105, 255);
+    border-bottom: 1px solid rgb(0, 105, 255);
+}
+
+
+
+
+.hidden-xs.hidden-sm.hidden-md .list_style > a:hover{
+    border-bottom: 3px solid #006aff; /* or whatever colour you'd prefer */ 
 }
 
 .list_style {
@@ -176,7 +195,7 @@ nav .list_style > a:hover {
 }
 
 .list_style > a:not(.button_nav){
-    padding: 24px 0px;
+    padding: 25px 0px;
     font-size: 15px;
     vertical-align: middle;
     color: #0b2353;
@@ -267,6 +286,11 @@ section a:hover{
     color: #1639ff;
 }
 /* section 1/7 */
+
+.margin_row_0{
+    margin: 0;
+}
+
 #section_businesses{
     padding-top: 50px;
     padding-bottom: 40px;
@@ -531,7 +555,7 @@ section a:hover{
 
 #footer{
     padding-top: 52px;
-    padding-bottom: 50px;
+    padding-bottom: 180px;
     background-color: #031c4e;
 }
 
@@ -556,7 +580,6 @@ section a:hover{
 }
 
 footer li {
-    
     padding: 5px;
     list-style: none; 
 }
@@ -580,6 +603,71 @@ footer a:hover{
 
 .margin_left_0{
     margin-left: 0;
+}
+
+/* shark icon */
+#container_shark{
+    position: fixed;
+    bottom: 5%;
+    right: 5%;
+    height: 100px;
+    width: 120px;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: #006aff;
+}
+
+#shark{
+    height: 100%;
+    width: 100%;
+}
+
+#number_shark{
+    position: absolute;
+    top: -10%;
+    right: -17%;
+    width: 40px;
+    height: 40px;
+    line-height: 31px;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 18px;
+    color: white;
+    border: 5px solid white;
+    background-color: red;
+}
+
+#text_shark{
+    position:absolute;
+    bottom: 10%;
+    right: 118%;
+    width: 589px;
+    padding: 25px;
+    border-radius: 10px;
+    font-weight: 500;
+    font-size: 18px;
+    visibility: hidden;
+    color: #031c4e;
+    background-color: #e5e5e5;
+
+}
+
+.triangle {
+    position:absolute;
+    bottom: 35%;
+    right: 104%;
+    width: 0; 
+    height: 0; 
+    visibility: hidden;
+    border-left: 10px solid #e5e5e5;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-top: 10px solid transparent;
+}
+
+#container_shark:hover #text_shark,
+#container_shark:hover .triangle {
+    visibility: visible;
 }
 
 
@@ -607,7 +695,7 @@ footer a:hover{
 
 
 /* sm - md */
-@media screen and (min-width: 768px) and (max-width:1199px){
+@media screen and (min-width: 769px) and (max-width:1199px){
 
     h1{
         font-size: 47px;
@@ -621,8 +709,8 @@ footer a:hover{
         padding-bottom: 0px;
     }
     
-    .nav>li>a {
-        position: relative; 
+    .nav > li > a {
+        /* position: relative;  */
         display: inline-block; 
         padding: 10px 15px;
     }
@@ -679,6 +767,38 @@ footer a:hover{
         left: -18%;
         transform: translateY(-50%);
     }
+
+    /* icon shark */
+    #container_shark{
+        position: fixed;
+        bottom: 5%;
+        left: 5%;
+       
+    }
+
+    #text_shark{
+        position:absolute;
+        bottom: 10%;
+        left: 121%;
+        width: 550px;
+       
+    
+    }
+    
+    .triangle {
+        position:absolute;
+        bottom: 35%;
+        right: -23%;
+        border-left: 10px solid transparent;
+        border-right: 10px solid #e5e5e5;
+        border-bottom: 10px solid transparent;
+        border-top: 10px solid transparent;
+    }
+    
+
+    
+
+
 }
 
 
@@ -711,7 +831,7 @@ footer a:hover{
     #images_businesses img{
         max-height: 150px;
         width: 100%;
-        margin: 5px;
+        margin: 0;
     }
     
 
@@ -800,6 +920,35 @@ footer a:hover{
         margin-bottom: 20px;
         font-size: 30px;
     }
+
+     /* icon shark */
+     #container_shark{
+        position: fixed;
+        bottom: 5%;
+        left: 5%;
+       
+    }
+
+    #text_shark{
+        position:absolute;
+        bottom: 10%;
+        left: 121%;
+        width: 200px;
+       
+       
+    
+    }
+    
+    .triangle {
+        position:absolute;
+        bottom: 35%;
+        right: -23%;
+        border-left: 10px solid transparent;
+        border-right: 10px solid #e5e5e5;
+        border-bottom: 10px solid transparent;
+        border-top: 10px solid transparent;
+    }
+    
 
    
     
