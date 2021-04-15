@@ -195,7 +195,7 @@ nav>li>a:focus,
 }
 
 .list_style > a:not(.button_nav){
-    padding: 25px 0px;
+    padding: 25px 10px;
     font-size: 15px;
     vertical-align: middle;
     color: #0b2353;
