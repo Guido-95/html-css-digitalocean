@@ -669,7 +669,7 @@ footer a:hover {
 }
 
 /* media query md */
-@media screen and (min-width: 769px) and (max-width:1199px) {
+@media screen and (min-width: 768px) and (max-width:1199px) {
     #ms_jumbotron {
         background-position: 53% -155%;
         background-size: 209% 100%;
@@ -768,15 +768,17 @@ footer a:hover {
     }
 }
 /* media query mobile */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
+    
     #ms_jumbotron {
         background-position: 269% 0%;
         background-size: 300% 104%;
     }
+
     h1 {
         font-size: 51px;
         font-weight: 600;
-        
+
     }
     .width_80_lg_100_xs_md {
         width: 100%;
@@ -802,7 +804,7 @@ footer a:hover {
     }
     
     /* section 2/7 */
-    #section_deploy > .container_xs {
+    #section_deploy .margin_padding_0 {
         padding-left: 0;
         margin-left: 0;
     }
@@ -907,7 +909,7 @@ footer a:hover {
     }  
 }
 /* media query sm */
-@media screen and (min-width: 769px) and (max-width: 992px) {
+@media screen and (min-width: 768px) and (max-width: 992px) {
     .container_sm_md {
         width: 95%;
     }
