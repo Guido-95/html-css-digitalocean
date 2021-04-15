@@ -4,12 +4,10 @@
     margin: 0;
     padding: 0;
 }
-
 /* container */
 .width_80_lg_100_xs_md {
     width: 80%;
 }
-
 /* common */
 body {
     font-family: 'Inter', sans-serif; 
@@ -32,7 +30,6 @@ body {
     margin-top: 30px;
 }
 
-
 /* color - background-color */
 .white {
     color: white;
@@ -50,7 +47,6 @@ body {
 .background_white_2 {
     background: white;
 }
-
 
 /* h1 - h4 style */
 h1 {
