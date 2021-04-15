@@ -9,12 +9,17 @@
 
 body {
     font-family: 'Inter', sans-serif;
-    background-color: aqua;
+   
+}
+
+.background_white_2{
+    
+    background: white;
 }
 .yellow {
-    height: 200px;
+    
     background-color: yellow;
-    border: 2px solid black;
+    border: 1px solid black;
 }
 
 .aqua{
@@ -43,7 +48,6 @@ body {
 h1{
     font-size: 60px;
     font-weight: 600;
-    /* text-shadow: 1px 1px black; */
     color: white;
 }
 h2 {
@@ -129,6 +133,12 @@ input{
 }
 
 /* bar_top_fixed */
+
+
+nav .list_style > a:hover {
+    color:#006aff;;
+}
+
 #container-nav-fixed {
     position: fixed;
     top: 0;
@@ -137,10 +147,24 @@ input{
     background-color: white;
 }
 
+.btn-primary.button_nav:hover {
+    color: #fff;
+    background-color: #006aff;
+    border-color: #204d74;
+}
+
 .nav_fixed {
-    height: 50px;
-    line-height: 50px;
+    border-bottom: 2px solid rgb(0, 105, 255);
+    height: 80px;
+    line-height: 80px;
     background-color: white;
+    
+}
+
+.ms_container_list_none{
+   
+    
+    border-bottom: 2px solid rgb(0, 105, 255);
 }
 
 .list_style {
@@ -151,11 +175,17 @@ input{
     display: inline-block;
 }
 
-.list_style > a{
+.list_style > a:not(.button_nav){
+    padding: 24px 0px;
     font-size: 15px;
     vertical-align: middle;
     color: #0b2353;
 }
+
+.list_style:focus{
+    border-bottom: 4px solid rgb(0, 105, 255);
+}
+
 
 .dropdown-menu > li > a {
     display: block;
@@ -199,8 +229,7 @@ a.button_nav{
 #ms_jumbotron{
     padding-top: 120px;
     padding-bottom: 70px;
-    background-image: url(../img/bg-banner-home.jpg);
-   
+    background-image: url(../img/bg-banner-home.jpg); 
 }
 
 #jumbotron_right {
@@ -218,9 +247,25 @@ a.button_nav{
     width: 5%;
 }
 
+header #jumbotron_right .font_mini > a{
+    text-decoration: underline;
+}
+.font_mini > a:hover{
+    color: #1639ff;
+}
+
+#jumbotron_right a:hover{
+    text-decoration: none;
+    color: #1639ff;
+}
+
 
 /* main */
 
+section a:hover{
+    text-decoration: none;
+    color: #1639ff;
+}
 /* section 1/7 */
 #section_businesses{
     padding-top: 50px;
@@ -232,12 +277,14 @@ a.button_nav{
     color: #737e9a;
 }
 
-#images_businesses{
+#images_businesses {
+    line-height: 100px;
     padding: 20px;
 }
-#images_businesses > img{
-    height: 100px;
-    margin: 5px;
+
+#images_businesses  img{
+    width: 15%;
+    margin-right: 15px;
 }
 
 .text_blue{
@@ -349,6 +396,10 @@ a.button_nav{
 
 
 /* section 5/7 */
+#section_service .text_green:hover{
+    color: #04faff;
+}
+
 #section_service{
     padding-top: 60px;
     padding-bottom: 60px;
@@ -387,9 +438,10 @@ a.button_nav{
 
 #section_service .text_blue{
     display: block;
-   
     text-align: right;
 }
+
+
 
 /* section 6/7 */
 
@@ -428,7 +480,8 @@ a.button_nav{
 }
 
 #section_development .text_blue {
-   margin-top: 40px;
+    display: inline-block;
+    margin-top: 35px;
 }
 
 #section_development .chavron_left {
@@ -459,7 +512,19 @@ a.button_nav{
     background-image: linear-gradient(#0044c3, #001e9a);
 }
 #section_started button{
+    font-weight: 500;
     color: #0771ff;
+}
+
+.ms_btn_opacity{
+    transition: 1s ;
+}
+
+#section_started .ms_btn_opacity:hover{
+    opacity: 0,5;
+    
+    background-color: #006aff;
+    color: #fff;
 }
 
 /* footer */
@@ -502,9 +567,14 @@ footer li a{
     color: #9fa6b8;
 }
 
-.strong_li a{
+.strong_li{
     font-weight: 700;
     font-size: 18px;
+    color: white;
+}
+
+footer a:hover{
+    text-decoration: none;
     color: white;
 }
 
@@ -546,6 +616,21 @@ footer li a{
         display: inline-block;
     }
 
+    .navbar-nav>li>a {
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+    
+    .nav>li>a {
+        position: relative; 
+        display: inline-block; 
+        padding: 10px 15px;
+    }
+
+    .ms_container_list_hidden{
+        padding: 0;
+    }
+
     
 
     .collapse.ms_container_list_none {
@@ -556,9 +641,13 @@ footer li a{
         display: block!important;
     }
 
+    /* section 1/7 */
 
-    #section_development .container{
-        width: 50%;
+   #images_businesses img{
+        max-height: 200px;
+        width: 14%;
+        margin: 5px;
+        
     }
 
     /* section 3/7 */
@@ -580,6 +669,10 @@ footer li a{
     }
 
     /* section 6/7 */
+    #section_development .container{
+        width: 50%;
+    }
+
     #section_development .chavron_left {
         position: absolute;
         top: 50%;
@@ -604,7 +697,23 @@ footer li a{
         width: 95%;
     }
 
+    .nav>li>a {
+        position: relative; 
+        display: inline-block; 
+        padding: 10px 15px;
+    }
+    .ms_container_list_hidden{
+        padding: 0;
+    }
+
     /* section 1/7 */
+
+    #images_businesses img{
+        max-height: 150px;
+        width: 100%;
+        margin: 5px;
+    }
+    
 
     /* section 2/7 */
     #section_deploy > .container_xs{
@@ -656,8 +765,6 @@ footer li a{
     #section_development img {
         width: 98%;
     }
-
-    
 
     #section_development .text_blue {
         margin-top: 20px;
