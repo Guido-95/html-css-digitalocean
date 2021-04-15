@@ -24,13 +24,29 @@ body {
     padding: 0;
 }
 
-/* color - background */
+.margin_row_0 {
+    margin: 0;
+}
+
+.container_nested {
+    margin-top: 30px;
+}
+
+
+/* color - background-color */
 .white {
     color: white;
 }
 .blue{
     color: #006aff;
 }
+.color_city {
+    color:#a0b4e1;
+}
+.text_green {
+    color: #00cbcf;
+}
+
 .background_white_2 {
     background: white;
 }
@@ -86,11 +102,6 @@ input{
     border: 1px solid lightgray;
 }
 /* /form style */
-
-.button_jumbotron {
-    margin: 5px 0px;
-    width: 100%;
-}
 
 .margin_top {
     margin-top: 40px;
@@ -152,89 +163,97 @@ nav .list_style > a:hover {
     border-bottom: 1px solid rgb(0, 105, 255);
     height: 80px;
     line-height: 80px;
-    background-color: white;
-    
+    background-color: white;  
 }
 
 /* border list navbar only xs-md */
 .ms_container_list_none {
     border-bottom: 1px solid rgb(0, 105, 255);
 }
-
+/* border list hover only lg */
 .hidden-xs.hidden-sm.hidden-md .list_style > a:hover {
     border-bottom: 3px solid #006aff;  
 }
 
+/* list style navbar */
 .list_style > a:not(.button_nav) {
     padding: 25px 8px;
     font-size: 15px;
     vertical-align: middle;
     color: #0b2353;
 }
-
-.list_style:focus {
-    border-bottom: 4px solid rgb(0, 105, 255);
-}
-
+/* dropdown menu style */
 .dropdown-menu > li > a {
     display: block;
     padding: 3px 20px;
     clear: both;
     font-weight: 700;
     line-height: 1.42857143;
-    color: #0b2353;
     white-space: nowrap;
+    color: #0b2353;
 }
 
 .display_inline_block {
     display: inline-block !important;
 }
 
-/* logo nav bar fixed top */
+/* logo navbar fixed top */
 #logo {
     vertical-align: middle;
     width: 200px;
 }
-
+/* icon right navbar only xs-md */
 .ms_button { 
     float: none;
     vertical-align: middle;
 }
-
 .ms_icon_3_span {
     background-color:#3a8aff;
 }
-
+/* button sign up */
 a.button_nav {
     font-weight: 700;
     color: #006aff;
     border: 1px solid #006aff;
     background-color: white;
 }
-/* bar-top-fixed */
+/* /bar-top-fixed */
 
 /* header */
+
+/* container jumbotron */
 #ms_jumbotron {
     padding-top: 120px;
     padding-bottom: 70px;
     background-image: url(../img/bg-banner-home.jpg); 
+   background-position: 27% -155%;
+    background-size: 119% 102%;
+    
 }
 
+/* jumbotron right */
 #jumbotron_right {
     height: 80%;
     border-radius: 5px;
     background-color: white;
 }
+
+.button_jumbotron {
+    margin: 5px 0px;
+    width: 100%;
+}
+
 #button_google {
     position: relative;
 }
+
 #google_icon {
     position: absolute;
     top: 15%;
     left: 1%;
     width: 5%;
 }
-
+/* terms of use */
 header #jumbotron_right .font_mini > a {
     text-decoration: underline;
 }
@@ -246,23 +265,23 @@ header #jumbotron_right .font_mini > a {
     text-decoration: none;
     color: #1639ff;
 }
-/* main */
 
+/* main */
 section a:hover {
     text-decoration: none;
     color: #1639ff;
 }
 
 /* section 1/7 */
-.margin_row_0 {
-    margin: 0;
-}
-
+/* padding-color section */
 #section_businesses {
     padding-top: 50px;
     padding-bottom: 40px;
     background: #f3f5f9;
 }
+/* /padding-color section */
+
+
 #h4_section_businesses {
     font-size: 17px;
     color: #737e9a;
@@ -273,7 +292,7 @@ section a:hover {
     padding: 20px;
 }
 
-#images_businesses  img {
+#images_businesses img {
     width: 15%;
     margin-right: 15px;
 }
@@ -285,11 +304,14 @@ section a:hover {
 }
 
 /* section 2/7 */
+/* padding-color section */
 #section_deploy {
     padding-top: 40px;
     padding-bottom: 40px;
     background-color: white;
 }
+/* /padding-color section */
+
 
 #section_deploy p {
     color: #5c6a88;
@@ -311,16 +333,15 @@ section a:hover {
     border-left: 2px solid lightgray;
 }
 
-.container_nested {
-    margin-top: 30px;
-}
-
 /* section 3/7 */
+/* padding-color section */
 #section_designed {
     padding-top: 40px;
     padding-bottom: 40px;
     background-color: #f3f5f9;
 }
+/* /padding-color section */
+
 
 #section_designed > .paragraph {
     color: #586686;
@@ -334,7 +355,6 @@ section a:hover {
 }
 
 #section_designed img {
-   
     width: 50%;
 }
 
@@ -361,12 +381,14 @@ section a:hover {
 }
 
 /* section 4/7 */
-
+/* padding-color section */
 #section_features {
     padding-top: 50px;
     padding-bottom: 60px;
     background-color: white;
 }
+/* /padding-color section */
+
 
 #section_features > h2 {
     margin-bottom: 50px;
@@ -383,26 +405,17 @@ section a:hover {
 }
 
 /* section 5/7 */
-#section_service .text_green:hover {
-    color: #04faff;
-}
 
+/* padding color section */
 #section_service {
     padding-top: 60px;
     padding-bottom: 60px;
     background-image: linear-gradient(#0044c3, #001e9a);
 }
+/* /padding color section */
 
-.color_city {
-    color:#a0b4e1;
-}
-
-.text_green {
-    color: #00cbcf;
-}
-
-.margin {
-    margin: 1px;
+#section_service .text_green:hover {
+    color: #04faff;
 }
 
 .padding_section_5 {
@@ -426,16 +439,14 @@ section a:hover {
     display: block;
     text-align: right;
 }
-
-
-
 /* section 6/7 */
-
+/* padding color section */
 #section_development {
     padding-top: 50px;
     padding-bottom: 50px;
     background: #f3f5f9;
 }
+/* /padding color section */
 .background_white {
     position: relative;
     margin-top: 50px;
@@ -492,12 +503,15 @@ section a:hover {
 }
 
 /* section 7/7 */
-
+/* padding color section */
 #section_started {
     padding-top: 50px;
     padding-bottom: 51px;
     background-image: linear-gradient(#0044c3, #001e9a);
 }
+/* -padding color section */
+
+
 #section_started button {
     font-weight: 500;
     color: #0771ff;
@@ -514,12 +528,13 @@ section a:hover {
 }
 
 /* footer */
-
+/* padding color footer */
 #footer {
     padding-top: 52px;
     padding-bottom: 180px;
     background-color: #031c4e;
 }
+/* /padding color footer */
 
 #footer .paragraph {
     font-size: 15px;
@@ -630,7 +645,7 @@ footer a:hover {
 #container_shark:hover .triangle {
     visibility: visible;
 }
-
+/* /shark icon */
 
 @media screen and (max-width: 500px) {
     .container_xs {
@@ -653,9 +668,13 @@ footer a:hover {
     
 }
 
-/* media query tablet */
+/* media query md */
 @media screen and (min-width: 769px) and (max-width:1199px) {
-
+    #ms_jumbotron {
+        background-position: 53% -155%;
+        background-size: 209% 100%;
+    }
+    
     h1 {
         font-size: 47px;
     }
@@ -729,7 +748,6 @@ footer a:hover {
         position: fixed;
         bottom: 5%;
         left: 5%;
-       
     }
 
     #text_shark {
@@ -737,8 +755,6 @@ footer a:hover {
         bottom: 10%;
         left: 121%;
         width: 550px;
-       
-    
     }
     
     .triangle {
@@ -753,8 +769,12 @@ footer a:hover {
 }
 /* media query mobile */
 @media screen and (max-width: 768px) {
+    #ms_jumbotron {
+        background-position: 269% 0%;
+        background-size: 300% 104%;
+    }
     h1 {
-        font-size: 40px;
+        font-size: 51px;
         font-weight: 600;
         
     }
@@ -886,7 +906,7 @@ footer a:hover {
         border-top: 10px solid transparent;
     }  
 }
-
+/* media query sm */
 @media screen and (min-width: 769px) and (max-width: 992px) {
     .container_sm_md {
         width: 95%;
