@@ -829,6 +829,11 @@ footer a:hover {
         font-size:10px ;
     }
 
+    /* section 4/7 */
+    #section_features img {
+        margin-top: 35px;
+    }
+    
     /* section 5/7 */
     .margin_left_0 {
         margin-bottom: 15px;
@@ -884,6 +889,8 @@ footer a:hover {
         position: fixed;
         bottom: 5%;
         left: 5%;
+        height: 70px;
+        width: 90px;
        
     }
 
